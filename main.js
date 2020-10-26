@@ -22,15 +22,12 @@ floatimg();
 function bubble_next() {
     var img1 = "/bubble.gif";
     var img2 = "/bubble_broken.gif";    
-    // var img2 = "./test.jpg";
     
     var imgElement = document.getElementById('bubble');
 
-    if (imgElement.src == img1){
+    if (imgElement.src.indexOf(img1) != -1){
         imgElement.src = img2
     } else {
         imgElement.src = img1
     };
-
-    // imgElement.src = (imgElement.src === img1)? img2 : img1;
  }
